@@ -24,7 +24,7 @@ function submit() {
   TotalData.push(fname, lname, email, number, cpass, lpass);
   window.localStorage.setItem("TotalData", JSON.stringify(TotalData));
 
-  window.location.href = "./login.html";
+  window.location.href = "login.html";
 }
 function log() {
   var lemail = document.getElementById("lemail").value;
@@ -33,14 +33,14 @@ function log() {
   UserData = JSON.parse(Data);
   console.log(UserData);
   if (UserData[2] === lemail && UserData[5] === lapass) {
-    window.location.href = "./ecommerce.html";
+    window.location.href = "index.html";
     console.log(UserData);
   } else {
     alert("Invalid Email and Password");
   }
 }
 function logout() {
-  window.location.href = "./login.html";
+  window.location.href = "login.html";
 }
 function side() {
   var show = document.getElementById("list");
@@ -127,7 +127,7 @@ window.addEventListener("scroll", function () {
 // Get the current page path
 var currentPage = window.location.pathname;
 
-if (currentPage.includes("ecommerce.html")) {
+if (currentPage.includes("index.html")) {
   document.querySelectorAll(".cart").forEach(cart => {
     cart.addEventListener("click", (event) => {
       if (event.target.classList.contains("cart-design")) {
