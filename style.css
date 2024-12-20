@@ -1615,6 +1615,31 @@ section.foot-sec1 {
 .d-flex-none{
 display: none;
 }
+img.logout-img {
+  width: 10px;
+  height: 10px;
+}
+.logout {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #9d9d9d;
+  font-weight: 600;
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+li.nav-item.dropdown.cur a {
+  text-transform: uppercase;
+  color: #9d9d9d;
+  font-weight: 600;
+  font-size: 10px;
+}
+li.nav-item.dropdown.eng a {
+  text-transform: uppercase;
+  color: #9d9d9d;
+  font-weight: 600;
+  font-size: 10px;
+}
 
 
 
