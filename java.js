@@ -33,7 +33,7 @@ function log() {
   UserData = JSON.parse(Data);
   console.log(UserData);
   if (UserData[2] === lemail && UserData[5] === lapass) {
-    window.location.href = "index.html";
+    window.location.href = "home.html";
     console.log(UserData);
   } else {
     alert("Invalid Email and Password");
@@ -127,7 +127,7 @@ window.addEventListener("scroll", function () {
 // Get the current page path
 var currentPage = window.location.pathname;
 
-if (currentPage.includes("index.html")) {
+if (currentPage.includes("home.html")) {
   document.querySelectorAll(".cart").forEach(cart => {
     cart.addEventListener("click", (event) => {
       if (event.target.classList.contains("cart-design")) {
