@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Animate.css for Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="dashboard" >
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="logo">
+            <i class="fas fa-chart-line"></i>
+            <span>Dashboard</span>
+          </div>
+          <ul class="nav-links">
+            <li><a href="dashboard.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="product.html"><i class="fas fa-chart-bar"></i> Products</a></li>
+            <li><a href="#"><i class="fas fa-file-alt"></i> Reports</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+          </ul>
+          <div class="dark-mode-toggle">
+            <span>Dark Mode</span>
+            <label class="switch">
+              <input type="checkbox" id="darkModeToggle">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <button id="logoutBtn" class="logout-btn" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        </aside>
+    
+        <main class="main-content">
+            
+              <h1>Welcome to Your Products</h1>
+           
+            <!-- Cards Section -->
+            <section class="cards">
+              <div class="card animate__animated animate__fadeInUp">
+                <div class="card-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="card-info">
+                  <h3>Total Users</h3>
+                  <p id="totalUsers">12,345</p>
+                </div>
+                <div class="card-progress">
+                  <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+              </div>
+              <div class="card animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="card-icon">
+                  <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="card-info">
+                  <h3>Revenue</h3>
+                  <p id="totalRevenue">$45,678</p>
+                </div>
+                <div class="card-progress">
+                  <div class="progress-bar" style="width: 50%;"></div>
+                </div>
+              </div>
+              <div class="card animate__animated animate__fadeInUp animate__delay-2s">
+                <div class="card-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="card-info">
+                  <h3>Orders</h3>
+                  <p id="totalOrders">1,234</p>
+                </div>
+                <div class="card-progress">
+                  <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+              </div>
+              <div class="card animate__animated animate__fadeInUp animate__delay-3s">
+                <div class="card-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="card-info">
+                  <h3>Growth</h3>
+                  <p id="growthRate">+12%</p>
+                </div>
+                <div class="card-progress">
+                  <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+              </div>
+            </section>
+      
+            <div id="showProducts"></div>
+      
+           
+          </main>
+</body>
+    <script src="app.js"></script>
+    <script src="product.js"></script>
+    <script>
+        
+    </script>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate Pro Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Animate.css for Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+  
+  <!-- Dashboard -->
+  <div class="dashboard" >
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <i class="fas fa-chart-line"></i>
+        <span>Dashboard</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="product.html"><i class="fas fa-chart-bar"></i> Products</a></li>
+        <li><a href="#"><i class="fas fa-file-alt"></i> Reports</a></li>
+        <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+      </ul>
+      <div class="dark-mode-toggle">
+        <span>Dark Mode</span>
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <button id="logoutBtn" class="logout-btn" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Header -->
+      <header class="header">
+        <h1>Welcome to Your Dashboard</h1>
+        <div class="user-profile">
+          <span id="userName"></span>
+          <img src="images/profile-pic.png" alt="User" id="userImage">
+        </div>
+      </header>
+      <section class="recent-activity animate__animated animate__fadeInUp animate__delay-2s">
+        <h3 class="profile-head">Profile</h3>
+        <div class="flex-das">
+        <div class="blk">
+            <img id="profilePic" src="images/profile-pic.png" alt="" >
+            <div class="block">
+            <label for="uploadPic" class="button-for">uploadImg</label>
+          </div>
+            <input type="file" name="file" id="uploadPic">
+          </div>
+          <div class="blk">
+           <ul id="activityList"></ul>
+      </div>
+      </div>
+      </section>
+      <!-- Cards Section -->
+      <section class="cards">
+        <div class="card animate__animated animate__fadeInUp">
+          <div class="card-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="card-info">
+            <h3>Total Users</h3>
+            <p id="totalUsers">12,345</p>
+          </div>
+          <div class="card-progress">
+            <div class="progress-bar" style="width: 70%;"></div>
+          </div>
+        </div>
+        <div class="card animate__animated animate__fadeInUp animate__delay-1s">
+          <div class="card-icon">
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+          <div class="card-info">
+            <h3>Revenue</h3>
+            <p id="totalRevenue">$45,678</p>
+          </div>
+          <div class="card-progress">
+            <div class="progress-bar" style="width: 50%;"></div>
+          </div>
+        </div>
+        <div class="card animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="card-icon">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="card-info">
+            <h3>Orders</h3>
+            <p id="totalOrders">1,234</p>
+          </div>
+          <div class="card-progress">
+            <div class="progress-bar" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="card animate__animated animate__fadeInUp animate__delay-3s">
+          <div class="card-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="card-info">
+            <h3>Growth</h3>
+            <p id="growthRate">+12%</p>
+          </div>
+          <div class="card-progress">
+            <div class="progress-bar" style="width: 60%;"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Charts Section -->
+      <section class="charts">
+        <div class="chart animate__animated animate__fadeInUp">
+          <h3>Sales Overview</h3>
+          <canvas id="salesChart"></canvas>
+        </div>
+        <div class="chart animate__animated animate__fadeInUp animate__delay-1s">
+          <h3>Traffic Sources</h3>
+          <canvas id="trafficChart"></canvas>
+        </div>
+      </section>
+
+     
+    </main>
+  </div>
+
+  <!-- Chart.js for Graphs -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+  <script src="script.js"></script>
+  <script src="app.js"></script> 
+</body>
+
+</html>
