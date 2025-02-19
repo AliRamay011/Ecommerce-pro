@@ -2092,7 +2092,7 @@ body.dark-mode .recent-activity h3 {
 }
 .modal-content {
   position: absolute !important;
-  top: 194px;
+  top: 170px;
   width: 29% !important;
   margin: auto;
   left: 35%;
@@ -2294,4 +2294,73 @@ textarea#address {
 }
 section.cards {
   margin-top: 30px;
+}
+.flex-pro-check {
+  display: flex
+;
+  justify-content: space-between;
+  background: white;
+  height: 30px;
+  align-items: center;
+  padding: 22px;
+  box-shadow: inset 1px 1px 12px 3px #d9d0d0;
+  font-weight: 700;
+}
+.product-item {
+  display: flex
+;
+  justify-content: space-between;
+  background: #767676;
+  color: white;
+  height: 30px;
+  width: 100%;
+  align-items: center;
+  padding: 22px;
+  font-weight: 700;
+  margin: 15px 0px;
+}
+.shad {
+  box-shadow: inset 1px 1px 12px 3px #d9d0d0;
+   
+}
+img.delete {
+  width: 15px;
+  cursor: pointer;
+  height: 15px;
+}
+
+
+button.edit-btn {
+  width: 54px;
+  height: 29px;
+  background: none;
+  border-radius: 106px;
+  padding: 0;
+  margin: 0;
+}
+button.delete-btn {
+  width: 54px;
+  height: 29px;
+  background: none;
+  border-radius: 106px;
+  padding: 0;
+  margin: 0;
+}
+.user-flow {
+  gap: 466px;
+  display: flex
+;
+}
+.flex-user {
+  display: flex
+;
+  justify-content: space-between;
+  padding: 5px 20px;
+  font-size: 15px;
+  align-items: baseline;
+  font-weight: 500;
+}
+li.userinfo {
+  list-style: none;
+  outline: none;
 }

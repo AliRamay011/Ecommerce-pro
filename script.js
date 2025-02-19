@@ -60,9 +60,7 @@ const trafficChart = new Chart(trafficChartCtx, {
         responsive: true,
     }
 });
-function logout() {
-  window.location.href = "home.html";
-}
+
 document.getElementById("uploadPic").addEventListener("change", function (event) {
     const file = event.target.files[0];
     if (file) {
